@@ -24,7 +24,7 @@ vboxwebsrv -H 0.0.0.0 -b
 Example:
 
 ```
-docker run --name phpvirtual -d -p 80:80  -e - ID_HOSTPORT=127.0.0.1:18083 -e ID_NAME=hostname_server -e ID_USER=user_server -e ID_PW=password -e CONF_browserRestrictFolders="/data,/home"  theadribreezy/phpvirtualbox
+docker run --name phpvirtual -d -p 80:80  -e ID_HOSTPORT=127.0.0.1:18083 -e ID_NAME=hostname_server -e ID_USER=user_server -e ID_PW=password -e CONF_browserRestrictFolders="/data,/home"  theadribreezy/phpvirtualbox
 ```
 Docker compose:
 
@@ -44,4 +44,11 @@ services:
       - CONF_browserRestrictFolders="/data,/home"
 ```
 
+The default pass is:
+
+User: admin
+
+Password: admin
+
+ You can change it after login firts time 
 
