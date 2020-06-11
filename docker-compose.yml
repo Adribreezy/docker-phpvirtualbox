@@ -1,0 +1,13 @@
+version: '3'
+services:
+ phpvirtualbox:
+    container_name: virtualbox
+    image: theadribreezy/phpvirtualbox
+    ports:
+      - 80:80
+    environment:
+      - ID_HOSTPORT=127.0.0.1:18083
+      - ID_NAME=hostname_server
+      - ID_USER=user_server
+      - ID_PW=password
+      - CONF_browserRestrictFolders="/data,/home"
